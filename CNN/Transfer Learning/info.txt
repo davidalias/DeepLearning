@@ -1,0 +1,3 @@
+requires python between 3.8 and 3.10 for flawless transfer learning implementation
+
+py -3.10 -m venv venv
