@@ -45,3 +45,21 @@ Hence,
 Bigger dot product → vectors point more in the same direction
 Zero → vectors are perpendicular
 Negative → vectors point in opposite directions
+
+Query vector is generated after dot product of w(q) matrix with input token. w(q) knows how to encode "query" of a token for attention computation.
+
+w(q), w(k) and w(v) are fixed and found during the training phase.
+
+w(k) knows how to encode 'key' of a token for attention computation
+
+Now mulitple key values generated for each token with the query vector of the modifier and applying softmax, corresponding values for each token is generated.
+
+w(v) knows how to encode "value" of a token for attention computation.
+
+This is a simple attention block, but in reality there are multiple attention blocks
+
+------------------------------------------------------------------------
+                        Muiti Head Attention
+----------------------------------------------------------------------
+
+The purpose of multiple attention heads is to allow the model to focus on different aspects or types of relationships between tokens (e.g., semantic, positional, syntactic) simultaneously, enriching the contextual understanding of each token.
