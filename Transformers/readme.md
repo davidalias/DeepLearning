@@ -63,3 +63,13 @@ This is a simple attention block, but in reality there are multiple attention bl
 ----------------------------------------------------------------------
 
 The purpose of multiple attention heads is to allow the model to focus on different aspects or types of relationships between tokens (e.g., semantic, positional, syntactic) simultaneously, enriching the contextual understanding of each token.
+
+The feed forward network (FFN) enriches each token's embedding by applying non-linear transformations independently, enabling the model to capture complex patterns and higher-order features beyond contextual relationships.
+
+Normalization layer ensures stable learning, improving the gradient flow.
+
+Nx layer (for BERT base -> 12 layers, for BERT large -> 24 layers)
+
+Encoder produces contextual embedding, which is given as an input to the decoder and it will find the next word, word translation,...
+
+Cross attention (w(q) is coming from decoder)
