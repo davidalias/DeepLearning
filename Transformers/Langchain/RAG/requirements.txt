@@ -1,0 +1,3 @@
+langchain_community
+pypdf
+beautifulsoup4 #to read HTML and pull out visible text
