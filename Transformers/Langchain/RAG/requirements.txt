@@ -3,3 +3,4 @@ pypdf
 beautifulsoup4 #to read HTML and pull out visible text
 langchain-chroma
 faiss-cpu
+youtube-transcript-api
