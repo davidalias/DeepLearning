@@ -2,3 +2,4 @@ tensorflow==2.15
 tensorflow_hub 
 pillow
 opencv-python==4.9.0.80
+fastapi
